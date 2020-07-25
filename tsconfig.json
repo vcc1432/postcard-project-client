@@ -1,32 +1,34 @@
 {
   "compilerOptions": {
-    "target": "es5",
+    "jsx": "react",
     "lib": [
-      "dom",
-      "dom.iterable",
-      "esnext"
+      "es6",
+      "dom"
     ],
+    "rootDir": "src",
+    "module": "esnext",
+    "target": "es5",
+    "sourceMap": true,
+    "moduleResolution": "node",
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
     "allowJs": true,
     "skipLibCheck": true,
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
     "strict": true,
     "forceConsistentCasingInFileNames": true,
-    "module": "esnext",
-    "moduleResolution": "node",
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "noEmit": true,
-    "jsx": "react",
-    "sourceMap": true, // Generate corrresponding .map file
-    "declaration": true, // Generate corresponding .d.ts file 
-    "noUnusedLocals": true, // Report errors on unused locals
-    "noUnusedParameters": true, // Report errors on unused parameters
-    "experimentalDecorators": true, // Enables experimental support for ES decorators
-    "noFallthroughCasesInSwitch": true // Report errors for fallthrough cases in switch statement    
+    "noEmit": true
   },
   "include": [
-    "src/**/*" // *** The files TypeScript should type check ***
+    "./src"
   ],
-  "exclude": ["node_modules", "build"] // *** The files to not type check ***
+  "exclude": [
+    "node_modules",
+    "build"
+  ]
 }
