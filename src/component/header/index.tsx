@@ -2,10 +2,10 @@
 import React from 'react';
 import Postcard from './../../assets/graphic/postcard.png';
 
-const Header = () => {
+const Header = (props: any) => {
   return (
-    <header>
-      <img src={Postcard} />
+    <header data-test="headerComponent">
+      <img src={Postcard} data-test="logoIMG" />
     </header>
   )
 }
